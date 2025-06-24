@@ -1,0 +1,21 @@
+{
+  "mainGroupFilter": {
+    "column": "auto_testjoin1.id",
+    "operator": "Between",
+    "value": "1",
+    "value2": "5"
+  },
+  "assertionHeaders": {
+    "header1": "id",
+    "header2": "name",
+    "header3": "age"
+  },
+  "SourceViewName": "auto_testjoin1",
+  "connectionName": "ora_ats_175",
+  "schemaName": "test_user1",
+  "tableName": "TEST_JOIN2",
+  "consolidationLeft": "id",
+  "consolidationRight": "id",
+  "consolidationType": "Inner Join",
+  "consolidationOperator": "="
+} 

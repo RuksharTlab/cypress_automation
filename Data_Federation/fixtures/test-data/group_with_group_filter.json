@@ -1,0 +1,31 @@
+{
+  "mainGroupFilter": {
+    "column": "ora_ats_175_test_user1_TEST_JOIN2.dept_id",
+    "value": 1
+  },
+  "secondGroupFilter": {
+    "column": "ora_ats_175_test_user1_TEST_JOIN2.department",
+    "value": "Department_1"
+  },
+  "thirdGroupFilter": {
+    "column": "ora_ats_175_test_user1_TEST_JOIN2.dept_id",
+    "value": 1
+  },
+  "fourthGroupFilter": {
+    "column": "ora_ats_175_test_user1_TEST_JOIN2.department",
+    "value": "Department_1"
+  },
+  "groupFilterOperator": "OR",
+  "assertionHeaders": {
+    "header1": "dept_id",
+    "header2": "department"
+  },
+  "SourceViewName": "auto_testjoin1",
+  "connectionName": "ora_ats_175",
+  "schemaName": "test_user1",
+  "tableName": "TEST_JOIN2",
+  "consolidationLeft": "id",
+  "consolidationRight": "id",
+  "consolidationType": "Inner Join",
+  "consolidationOperator": "="
+} 

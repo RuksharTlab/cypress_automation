@@ -1,0 +1,38 @@
+{
+  "mainGroupFilter": {
+    "column": "auto_testjoin1.id",
+    "operator": "=",
+    "value": "1"
+  },
+  "mainGroupNestedFilter": {
+    "column": "auto_testjoin1.age",
+    "operator": ">",
+    "value": "20"
+  },
+  "secondGroupFilter": {
+    "column": "ora_ats_175_test_user1_TEST_JOIN2.dept_id",
+    "operator": ">",
+    "value": "1"
+  },
+  "secondGroupNestedFilter": {
+    "column": "ora_ats_175_test_user1_TEST_JOIN2.department",
+    "operator": "=",
+    "value": "Department_1"
+  },
+  "groupFilterOperator": "AND",
+  "nestedGroupOperator": "AND",
+  "assertionHeaders": {
+    "header1": "auto_testjoin1.id",
+    "header2": "auto_testjoin1.age",
+    "header3": "ora_ats_175_test_user1_TEST_JOIN2.dept_id",
+    "header4": "ora_ats_175_test_user1_TEST_JOIN2.department"
+  },
+  "SourceViewName": "auto_testjoin1",
+  "connectionName": "ora_ats_175",
+  "schemaName": "test_user1",
+  "tableName": "TEST_JOIN2",
+  "consolidationLeft": "id",
+  "consolidationRight": "id",
+  "consolidationType": "Inner Join",
+  "consolidationOperator": "="
+} 

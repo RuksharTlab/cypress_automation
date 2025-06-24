@@ -1,0 +1,26 @@
+{
+  "mainGroupFilter": {
+    "column": "atss_testjoin1.id",
+    "operator": "Between",
+    "value": "1",
+    "value2": "5"
+  },
+  "mainGroupSecondFilter": {
+    "column": "atss_testjoin1.name",
+    "operator": "LIKE",
+    "value": "%_1"
+  },
+  "groupFilterOperator": "AND",
+  "assertionHeaders": {
+    "header1": "atss_testjoin1.id",
+    "header2": "atss_testjoin1.age"
+  },
+  "SourceViewName": "atss_testjoin1",
+  "connectionName": "Oratest_ats_175",
+  "schemaName": "test_user1",
+  "tableName": "TEST_JOIN2",
+  "consolidationLeft": "id",
+  "consolidationRight": "id",
+  "consolidationType": "Inner Join",
+  "consolidationOperator": "="
+} 

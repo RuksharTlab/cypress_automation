@@ -1,0 +1,17 @@
+
+  {
+    "connectionName": "ora_ats_175",
+    "SourceViewName": "auto_testjoin1",
+    "schemaName": "test_user1",
+    "tableName": "TEST_JOIN2",
+    "consolidationLeft": "id",
+    "consolidationRight": "id",
+    "consolidationType": "Inner Join",
+    "consolidationOperator": "=",
+    "viewName": "MyAutomatedView1",
+    "keyword": "where",
+    "column": "auto_testjoin1.id",
+    "operator": "BETWEEN",
+    "value": "5",
+    "value2": "10"
+  }

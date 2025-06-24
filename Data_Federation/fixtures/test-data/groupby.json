@@ -1,0 +1,33 @@
+{
+ "SourceViewName": "auto_testjoin1",
+ "connectionName": "ora_ats_175",
+  "schemaName": "test_user1",
+  "tableName": "TEST_JOIN2",
+  "consolidationLeft": "id",
+  "consolidationRight": "id",
+  "consolidationType": "Inner Join",
+  "consolidationOperator": "=",
+  "columns": {
+    "id": {
+      "id": "id",
+      "alias": "total_records",
+      "output": "No",
+      "aggregate": "Count"
+    },
+    "dept_id": {
+      "id": "DEPT_ID",
+      "order": "1",
+      "sort": "Descending",
+      "groupBy": "Yes"
+    },
+    "department": {
+      "id": "DEPARTMENT",
+      "groupBy": "Yes"
+    }
+  },
+  "assertionHeaders": {
+    
+    "department": "DEPARTMENT",
+    "total_records": "TOTAL_RECORDS"
+  }
+} 

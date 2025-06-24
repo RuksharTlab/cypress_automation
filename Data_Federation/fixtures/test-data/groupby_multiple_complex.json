@@ -1,0 +1,25 @@
+{
+    "connectionName": "ora_ats_175",
+    "SourceViewName": "auto_testjoin1",
+    "schemaName": "test_user1",
+    "tableName": "TEST_JOIN2",
+    "consolidationLeft": "id",
+    "consolidationRight": "id",
+    "consolidationType": "Inner Join",
+    "consolidationOperator": "=",
+    "viewName": "MyAutomatedView1",
+    "keyword": "group by",
+    "groupbycolumn1":"id",
+    "alias1": "ID_SUM",
+    "output1": "No",
+    "aggregate1": "Sum",
+
+    "groupbycolumn2":"DEPARTMENT",
+    "groupbycolumn3":"DEPT_ID",
+    
+      
+    "assertionHeaders": {
+      "id": "ID_SUM",
+      "department": "DEPARTMENT"
+    }
+  }

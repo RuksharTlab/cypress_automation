@@ -1,0 +1,204 @@
+# groupby_complex.cy.js
+1. Log in and navigate to the create business view page.
+2. Drag and drop Source View, Consolidation, and Connection nodes onto the canvas.
+3. Fit the view and connect the nodes.
+4. Zoom out for better visibility.
+5. Fill in the Source View card and configure the group by column (set alias, output, aggregate).
+6. Confirm Source View selection.
+7. Fill in the Connection card and select the group by column.
+8. Confirm Connection selection.
+9. Open and fill the Consolidation (Join) modal.
+10. Open the code filter, type the group by statement, and save.
+11. Proceed to the next step.
+12. Validate output headers in the result table.
+**Expected Result:** The output table displays headers matching the expected group by columns and aliases as defined in the test data.
+
+# groupby_multiple_complex.cy.js
+1. Log in and navigate to the create business view page.
+2. Drag and drop Source View, Consolidation, and Connection nodes onto the canvas.
+3. Fit the view and connect the nodes.
+4. Zoom out for better visibility.
+5. Fill in the Source View card and configure the group by column (set alias, output, aggregate).
+6. Confirm Source View selection.
+7. Fill in the Connection card and select multiple group by columns.
+8. Confirm Connection selection.
+9. Open and fill the Consolidation (Join) modal.
+10. Open the code filter, type the group by statement for multiple columns, and save.
+11. Proceed to the next step.
+12. Validate output headers in the result table.
+**Expected Result:** The output table displays headers for all selected group by columns and their aliases as defined in the test data.
+
+# filter_complex.cy.js
+1. Log in and navigate to the create business view page.
+2. Drag and drop Source View, Consolidation, and Connection nodes onto the canvas.
+3. Fit the view and connect the nodes.
+4. Zoom out for better visibility.
+5. Fill in the Source View card and select all columns.
+6. Confirm Source View selection.
+7. Fill in the Connection card and select all columns.
+8. Confirm Connection selection.
+9. Open and fill the Consolidation (Join) modal.
+10. Open the code filter, type the filter condition (supports BETWEEN, LIKE, etc.), and save.
+11. Proceed to the next step.
+12. Validate the output table rows against the filter condition.
+**Expected Result:** The output table only displays rows that match the filter condition (e.g., BETWEEN, LIKE, etc.) as specified in the test data.
+
+# sorurceview_to_connection_complex.cy.js
+1. Log in and navigate to the create business view page.
+2. Drag and drop Source View, Consolidation, and Connection nodes onto the canvas.
+3. Fit the view and connect the nodes.
+4. Zoom out for better visibility.
+5. Fill in the Source View card and select all columns.
+6. Confirm Source View selection.
+7. Fill in the Connection card and select all columns.
+8. Confirm Connection selection.
+9. Open and fill the Consolidation (Join) modal.
+10. Proceed to the next step.
+11. Create and save the view with a given name.
+**Expected Result:** The view is created and saved successfully, and the resulting data matches the configuration provided in the test data.
+
+# groupby.cy.js
+1. Log in and navigate to the create business view page.
+2. Drag and drop Source View, Consolidation, and Connection nodes onto the canvas.
+3. Fit the view and connect the nodes.
+4. Zoom out for better visibility.
+5. Fill in the Source View card and configure the group by column (set alias, output, aggregate).
+6. Confirm Source View selection.
+7. Fill in the Connection card and configure group by columns (e.g., department).
+8. Confirm Connection selection.
+9. Open and fill the Consolidation (Join) modal.
+10. Proceed to the next step and skip the optional step.
+11. Validate output headers in the result table.
+**Expected Result:** The output table displays headers matching the expected group by columns and aliases as defined in the test data.
+
+# groupby_multiple.cy.js
+1. Log in and navigate to the create business view page.
+2. Drag and drop Source View, Consolidation, and Connection nodes onto the canvas.
+3. Fit the view and connect the nodes.
+4. Zoom out for better visibility.
+5. Fill in the Source View card and configure the group by column (set alias, output, aggregate).
+6. Confirm Source View selection.
+7. Fill in the Connection card and configure multiple group by columns (e.g., dept_id, department).
+8. Confirm Connection selection.
+9. Open and fill the Consolidation (Join) modal.
+10. Proceed to the next step and skip the optional step.
+11. Validate output headers and that table rows are grouped and not empty.
+**Expected Result:** The output table displays headers for all selected group by columns and their aliases, and the data is grouped as expected.
+
+# filter.cy.js
+1. Log in and navigate to the create business view page.
+2. Drag and drop Source View, Consolidation, and Connection nodes onto the canvas.
+3. Fit the view and connect the nodes.
+4. Zoom out for better visibility.
+5. Fill in the Source View card and select all columns.
+6. Confirm Source View selection.
+7. Fill in the Connection card and select all columns.
+8. Confirm Connection selection.
+9. Open and fill the Consolidation (Join) modal.
+10. Proceed to the filter configuration step.
+11. Apply the filter condition (supports BETWEEN, LIKE, etc.) to the main group.
+12. Apply the filter and validate the output table rows against the filter condition.
+**Expected Result:** The output table only displays rows that match the filter condition (e.g., BETWEEN, LIKE, etc.) as specified in the test data.
+
+# sourceview_to_connection.cy.js
+1. Log in and navigate to the create business view page.
+2. Drag and drop Source View, Consolidation, and Connection nodes onto the canvas.
+3. Fit the view and connect the nodes.
+4. Zoom out for better visibility.
+5. Fill in the Source View card and select all columns.
+6. Confirm Source View selection.
+7. Fill in the Connection card and select all columns.
+8. Confirm Connection selection.
+9. Open and fill the Consolidation (Join) modal.
+10. Proceed to the next step and skip the optional step.
+11. Create and save the view with a given name.
+**Expected Result:** The view is created and saved successfully, and the resulting data matches the configuration provided in the test data.
+
+# filter_and_operator.cy.js
+1. Log in and navigate to the create business view page.
+2. Drag and drop Source View, Consolidation, and Connection nodes onto the canvas.
+3. Fit the view and connect the nodes.
+4. Zoom out for better visibility.
+5. Fill in the Source View card and select all columns.
+6. Confirm Source View selection.
+7. Fill in the Connection card and select all columns.
+8. Confirm Connection selection.
+9. Open and fill the Consolidation (Join) modal.
+10. Proceed to the filter configuration step.
+11. Apply the first filter condition to the main group.
+12. Add a second filter condition to the main group.
+13. Set the group operator (AND/OR) between conditions.
+14. Apply the filters and validate the output table rows against both conditions.
+**Expected Result:** The output table only displays rows that match both filter conditions (with the specified AND/OR logic) as defined in the test data.
+
+# nested_and_nested_filter.cy.js
+1. Log in and navigate to the create business view page.
+2. Drag and drop Source View, Consolidation, and Connection nodes onto the canvas.
+3. Fit the view and connect the nodes.
+4. Zoom out for better visibility.
+5. Fill in the Source View card and select all columns.
+6. Confirm Source View selection.
+7. Fill in the Connection card and select all columns.
+8. Confirm Connection selection.
+9. Open and fill the Consolidation (Join) modal.
+10. Proceed to the filter configuration step.
+11. Apply a filter and a nested filter to the main group.
+12. Add a second group and apply a filter and a nested filter to it.
+13. Apply the filters and validate the output table rows against the nested group conditions.
+**Expected Result:** The output table only displays rows that match the nested filter conditions for both groups as defined in the test data.
+
+# group_with_group_filter.cy.js
+1. Log in and navigate to the create business view page.
+2. Drag and drop Source View, Consolidation, and Connection nodes onto the canvas.
+3. Fit the view and connect the nodes.
+4. Zoom out for better visibility.
+5. Fill in the Source View card and select all columns.
+6. Confirm Source View selection.
+7. Fill in the Connection card and select all columns.
+8. Confirm Connection selection.
+9. Open and fill the Consolidation (Join) modal.
+10. Proceed to the filter configuration step.
+11. Add a new group and apply filter conditions to both groups.
+12. Apply the filters and validate the output table rows against the group filter conditions.
+**Expected Result:** The output table only displays rows that match the filter conditions for both groups as defined in the test data.
+
+# group_and_nested_filter.cy.js
+1. Log in and navigate to the create business view page.
+2. Drag and drop Source View, Consolidation, and Connection nodes onto the canvas.
+3. Fit the view and connect the nodes.
+4. Zoom out for better visibility.
+5. Fill in the Source View card and select all columns.
+6. Confirm Source View selection.
+7. Fill in the Connection card and select all columns.
+8. Confirm Connection selection.
+9. Open and fill the Consolidation (Join) modal.
+10. Proceed to the filter configuration step.
+11. Apply a filter to the main group and a nested filter to a new group.
+12. Apply the filters and validate the output table rows against the group and nested filter conditions.
+**Expected Result:** The output table only displays rows that match the filter and nested filter conditions as defined in the test data.
+
+# union.cy.js
+1. Log in and navigate to the create business view page.
+2. Drag and drop Source View, Consolidation, and Connection nodes onto the canvas.
+3. Fit the view and connect the nodes.
+4. Fill in the Source View card and select all columns, then confirm selection.
+5. Fill in the Connection card with connection, schema, and table details from test data, select all columns, and confirm selection.
+6. Zoom out for better visibility.
+7. Open the Consolidation card and fill in the Union details.
+8. Proceed to the next step and skip the optional step(s).
+9. Intercept the save view API call to verify its payload and response.
+10. Create and save the view with a given name from test data.
+**Expected Result:** The view is created and saved successfully, and the resulting data matches the configuration provided in the test data.
+
+# union.cy.js
+1. Log in and navigate to the create business view page.
+2. Drag and drop Source View, Consolidation, and Connection nodes onto the canvas.
+3. Fit the view and connect the nodes.
+4. Fill in the Source View card and select all columns, then confirm selection.
+5. Fill in the Connection card with connection, schema, and table details from test data, select all columns, and confirm selection.
+6. Zoom out for better visibility.
+7. Open the Consolidation card and fill in the Union All details.
+8. Proceed to the next step and skip the optional step(s).
+9. Intercept the save view API call to verify its payload and response.
+10. Create and save the view with a given name from test data.
+**Expected Result:** The view is created and saved successfully, and the resulting data matches the configuration provided in the test data.
